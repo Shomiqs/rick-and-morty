@@ -1,11 +1,12 @@
-import "./single-page.css";
+import "./SinglePage.css";
 import Modal from "../../components/Modal/Modal";
 import BasicButton from "../../components/Button/Button";
 
-const SinglePage = ({ clickedChar, setClickedChar }) => {
+export const SinglePage = ({ clickedChar, setClickedChar }) => {
+  console.log(clickedChar);
   return (
     <div className="single-page">
-      <BasicButton text={"Go Back"} handle={setClickedChar} />
+      <BasicButton text={"Go back"} handle={setClickedChar} />
       <div>
         <img src={clickedChar.image} alt="character" />
       </div>
@@ -21,8 +22,7 @@ const SinglePage = ({ clickedChar, setClickedChar }) => {
           return <Modal episodeUrl={e} />;
         })}
       </div>
+      <Modal />
     </div>
   );
 };
-
-export default SinglePage;

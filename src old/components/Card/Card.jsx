@@ -8,6 +8,7 @@ export const Card = ({ character, setClickedChar }) => {
     >
       <img src={character.image} alt="character" />
       <h3>{character.name}</h3>
+      {/* <button>Like</button> */}
     </div>
   );
 };
