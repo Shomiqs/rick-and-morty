@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { SinglePage } from "./pages/SinglePage/SinglePage";
 import { CHARACTER_URL } from "./constants";
-import "./app.css";
+import "./App.css";
 
 function App() {
   const [clickedChar, setClickedChar] = useState(null);
